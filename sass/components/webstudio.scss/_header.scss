@@ -1,0 +1,92 @@
+@import "../utils/placeholders";
+@import "../utils/variables.scss";
+.nav{
+    display: flex;
+    padding-top: 30px;
+    &__item:hover{
+        color: $decorative-color;
+        fill: $decorative-color;
+    }
+        &__logo{
+        align-items: center;
+        margin-right: 80px;
+        font-family: "Raleway";
+    }
+}
+.nav__item{
+        align-items: center;
+        color: $main-color;
+        margin-right: 50px;  
+}
+.nav__mail{
+        color: $text-color;
+        margin-left: 260px;
+        margin-right: 50px;
+        &:hover{
+            color: $decorative-color;
+            fill: $decorative-color;
+        }
+}
+.nav__tel{
+    color: $text-color;
+    &:hover{
+        color: $decorative-color;
+        fill: $decorative-color;
+    }
+}
+.nav__mail-item{
+    position: relative;
+    bottom: 20px;
+}
+.nav__phone-item{
+        position: relative;
+        bottom: 20px; 
+}
+.nav__studio{
+        padding-right: 0;
+        transition-duration: 500ms;
+        transition-timing-function: linear;
+        &::after{ 
+            @extend %transition ;
+        }
+        &:hover::after{
+             @extend %hover;
+        }
+    }
+.nav__portfolio{
+        transition-duration: 300ms;
+        transition-timing-function: linear;
+        &::after{
+            @extend %transition ;
+            width: 74px;
+        }
+        &:hover::after{
+            @extend %hover;
+        }
+    }
+.nav__contacts{
+        transition-duration: 500ms;
+        transition-timing-function: linear;
+        &::after{
+            @extend %transition ;
+            width: 64px;
+        }
+        &:hover::after{
+            @extend %hover;
+        }
+    }
+a{
+    text-decoration: none;
+}
+.mail__svg{
+    fill: $text-color;
+    position: relative;
+    left: 235px;
+    top: 20px;
+}
+.phone__svg{
+    fill: $text-color;
+    position: relative;
+    right: 20px;
+    top: 21px;
+}

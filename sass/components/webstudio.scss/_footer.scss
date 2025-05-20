@@ -1,0 +1,118 @@
+@import "../utils/variables.scss";
+.footer{
+    background-color: $footer-backround-color;
+    margin: 0 auto;
+    height: 252px;
+}
+.footer__logo{
+    padding-top: 62px;
+    padding-bottom: 25px;
+}
+.footer__gmail{
+    padding-bottom: 15px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer__list{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 45px;
+}
+.footer__icon{
+    width: 44px;
+    height: 44px;
+    max-width: 44px;
+    max-height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: white;
+    &:hover{
+        background-color: $decorative-color;
+        animation-name: div-backround-color;
+        animation-duration: 0.5s;
+    }
+}
+@keyframes div-backround-color{
+    0% {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    100% {
+        background-color: $decorative-color;
+    }
+}
+.footer__svg{
+    min-width: 20px;
+    min-height: 20px;
+    position: relative;
+    left: 12px;
+    top: 12px;
+}
+.footer__item-socials{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 207px;
+    max-height: 80px;
+    gap: 10px;
+    margin-left: 95px;
+}
+.footer__title{
+    font-size: 14px ;
+    color: white;
+    width: 163px;
+    text-transform: uppercase;
+}
+.footer__subscribe-title{
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.footer__input{
+    max-width: 358px;
+    width: 358px;
+    height: 50px;
+    max-height: 50px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    &::placeholder{
+        font-size: 16px ;
+        font-family: Roboto;
+        color: rgba(255, 255, 255, 0.6);
+        position: relative;
+        left: 15px;     
+    }
+}
+.footer__btn{
+    padding-right: 63px;
+    width: 200px;
+    height: 54px;
+    @include color-btn ;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 700;
+    max-width: 200px;
+    padding-left: 16px;
+    position: absolute;
+}
+.footer__item{
+    margin-left: 93px;
+
+}
+.footer__send-svg{
+    position: relative;
+    left: 148px;
+    top: 7px;
+}
+.footer__addres{
+    color: white;
+    padding-bottom: 15px;
+}
+.footer__tel{
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 17px;
+}
